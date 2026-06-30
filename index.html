@@ -1,0 +1,160 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TMEL — Apontamentos de estudo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">PDF Notes</a>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#files">Apontamentos</a>
+        <a href="#about">Como utilizar</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Alternar tema">
+        <span class="theme-toggle__icon">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section reveal">
+      <div class="container hero-content">
+        <p class="eyebrow">Tecnologias Multimédia para E-Learning</p>
+        <h1>Apontamentos de estudo TMEL</h1>
+        <p class="hero-text">
+          Site estruturado de apontamentos sobre os ficheiros PDF da unidade curricular: teoria, tabelas,
+          esquemas, exemplos e autoavaliação.
+        </p>
+        <a href="#files" class="button button-primary">Escolher apontamento</a>
+      </div>
+    </section>
+
+    <section id="files" class="section files reveal">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Materiais da unidade curricular</p>
+          <h2>Escolhe o ficheiro que queres estudar</h2>
+          <p>
+            Todas as páginas utilizam o mesmo <strong>styles.css</strong> e <strong>script.js</strong>.
+            Os nomes abaixo correspondem aos ficheiros criados <strong>file1.html — file10.html</strong>.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="file-card">
+            <span class="file-card__number">01</span>
+            <h3>TP01 — Introdução ao e-learning</h3>
+            <p>Bloco inicial da unidade curricular: lógica básica do e-learning, contexto educativo e principais orientações.</p>
+            <a href="file1.html" class="button button-secondary">Abrir apontamento</a>
+          </article>
+
+          <article class="file-card">
+            <span class="file-card__number">02</span>
+            <h3>TP02 — Fundamentos do ensino à distância</h3>
+            <p>Ensino à Distância, projeto da fase 1, papéis do estudante e do docente, tipos de aprendizagem e abordagens.</p>
+            <a href="file2.html" class="button button-secondary">Abrir apontamento</a>
+          </article>
+
+          <article class="file-card">
+            <span class="file-card__number">03</span>
+            <h3>TP03 — Teorias da aprendizagem e sistemas de EaD</h3>
+            <p>Behaviorismo, construtivismo, conectivismo, e-learning, b-learning, m-learning e t-learning.</p>
+            <a href="file3.html" class="button button-secondary">Abrir apontamento</a>
+          </article>
+
+          <article class="file-card">
+            <span class="file-card__number">04</span>
+            <h3>TP04 — MOOC e multimédia</h3>
+            <p>Massive Open Online Courses, tipos de multimédia e princípios da aprendizagem multimédia de Mayer.</p>
+            <a href="file4.html" class="button button-secondary">Abrir apontamento</a>
+          </article>
+
+          <article class="file-card">
+            <span class="file-card__number">05</span>
+            <h3>TP05 — O estudante e o e-learning</h3>
+            <p>Lifelong learning, digital literacy, DigComp 3.0, planeamento, storyboard e produção de conteúdos.</p>
+            <a href="file5.html" class="button button-secondary">Abrir apontamento</a>
+          </article>
+
+          <article class="file-card">
+            <span class="file-card__number">06</span>
+            <h3>TP06 — Instructional Design: ADDIE e SAM</h3>
+            <p>Design instrucional, princípios de Merrill, modelo ADDIE, modelo SAM e comparação das abordagens.</p>
+            <a href="file6.html" class="button button-secondary">Abrir apontamento</a>
+          </article>
+
+          <article class="file-card">
+            <span class="file-card__number">07</span>
+            <h3>TP07 — Inclusão, acessibilidade, UX e analytics</h3>
+            <p>Educação Inclusiva, Acessibilidade, UDL, WCAG, Learning Analytics, UX, LMS e standards.</p>
+            <a href="file7.html" class="button button-secondary">Abrir apontamento</a>
+          </article>
+
+          <article class="file-card">
+            <span class="file-card__number">08</span>
+            <h3>TP09 — LMS, CMS, LCMS e tecnologias de e-learning</h3>
+            <p>Plataformas de gestão da aprendizagem, conteúdo, standards, Scrum, Kanban e ferramentas digitais.</p>
+            <a href="file8.html" class="button button-secondary">Abrir apontamento</a>
+          </article>
+
+          <article class="file-card">
+            <span class="file-card__number">09</span>
+            <h3>TP10 — eLearning Standards e Web Tools</h3>
+            <p>SCORM, xAPI, cmi5, LTI, interatividade, Web 2.0, communication tools, Web 3.0 e mobile apps.</p>
+            <a href="file9.html" class="button button-secondary">Abrir apontamento</a>
+          </article>
+
+          <article class="file-card">
+            <span class="file-card__number">10</span>
+            <h3>TP11 — Web 2.0, comunicação, Mobile Apps e Web 3.0</h3>
+            <p>Wiki, Padlet, Notion, Miro, Trello, Discord, Teams, Slack, mobile learning e ferramentas de AI.</p>
+            <a href="file10.html" class="button button-secondary">Abrir apontamento</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about reveal">
+      <div class="container about-content">
+        <div>
+          <p class="eyebrow">Como utilizar</p>
+          <h2>Um site — dez páginas de apontamentos</h2>
+        </div>
+      
+        <div class="about-list">
+          <div class="about-item">
+            <h3>1. Escolhe um tema</h3>
+            <p>Abre o cartão do ficheiro TP necessário e passa para a página correspondente.</p>
+          </div>
+        
+          <div class="about-item">
+            <h3>2. Estuda o material</h3>
+            <p>As páginas incluem definições, tabelas, esquemas, erros frequentes, mini-apontamentos e perguntas de autoavaliação.</p>
+          </div>
+        
+          <div class="about-item">
+            <h3>3. Revê antes da avaliação</h3>
+            <p>Utiliza os mini-apontamentos e as perguntas no final de cada página para rever rapidamente os principais temas da unidade curricular.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 PDF Notes · TMEL</p>
+      <a href="index.html">Página inicial</a>
+    </div>
+  </footer>
+</body>
+</html>

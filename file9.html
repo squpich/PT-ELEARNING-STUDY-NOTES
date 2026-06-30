@@ -1,0 +1,849 @@
+<!-- file9.html -->
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TMEL TP10 — eLearning Standards, Interactivity e Web Tools</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">PDF Notes</a>
+
+      <nav class="main-nav" aria-label="Navegação da página">
+        <a href="#standards">Standards</a>
+        <a href="#scorm">SCORM</a>
+        <a href="#xapi">xAPI</a>
+        <a href="#cmi5">cmi5</a>
+        <a href="#lti">LTI</a>
+        <a href="#interactivity">Interatividade</a>
+        <a href="#tools">Web tools</a>
+        <a href="#exam">Exame</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Alternar tema">
+        <span class="theme-toggle__icon">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section note-hero reveal">
+      <div class="container note-layout">
+        <p class="eyebrow">TMEL · TP10 · Aula n.º 10 · 13.06.2026</p>
+        <h1>eLearning Standards, interatividade e ferramentas digitais</h1>
+        <p class="hero-text">
+          Apontamentos detalhados sobre SCORM, xAPI, cmi5, LTI, desenvolvimento histórico das plataformas digitais,
+          princípios de interatividade, estratégias ativas, Web 2.0, ferramentas de comunicação,
+          Web 3.0 e aplicações móveis.
+        </p>
+
+        <div class="note-meta-grid">
+          <div class="note-meta-card">
+            <span>Disciplina</span>
+            <strong>Tecnologias Multimédia para E-Learning</strong>
+          </div>
+          <div class="note-meta-card">
+            <span>Bloco principal</span>
+            <strong>eLearning Standards</strong>
+          </div>
+          <div class="note-meta-card">
+            <span>Data</span>
+            <strong>13.06.2026</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>1. O que se estuda neste ficheiro</h2>
+
+          <p>
+            O TP10 continua o bloco tecnológico da disciplina e explica em detalhe os standards de integração
+            de conteúdos de e-learning: <strong>SCORM</strong>, <strong>xAPI</strong>, <strong>cmi5</strong>
+            e <strong>LTI</strong>. O ficheiro também aborda os princípios de interatividade, estratégias ativas,
+            Web 2.0, communication tools, Web 3.0 e mobile apps.
+          </p>
+
+          <div class="callout">
+            <strong>Ideia principal:</strong> um módulo de e-learning de qualidade não deve apenas parecer um site,
+            mas também ser compatível com plataformas, rastreável, interativo, pedagogicamente significativo
+            e adequado à integração num ecossistema educativo digital.
+          </div>
+
+          <div class="topic-grid">
+            <div class="topic-card">
+              <h3>SCORM</h3>
+              <p>Standard clássico de empacotamento, lançamento e tracking de conteúdos de e-learning em LMS.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>xAPI</h3>
+              <p>Standard flexível para registar learning experiences em diferentes contextos, não apenas dentro de uma LMS.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>cmi5</h3>
+              <p>Perfil xAPI para LMS, que define regras de lançamento, autorização e monitorização.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>LTI</h3>
+              <p>Standard para ligar ferramentas educativas externas a LMS através de integração segura.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Interactivity</h3>
+              <p>A interatividade deve apoiar objetivos de aprendizagem, autonomy, feedback e active participation.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Web tools</h3>
+              <p>Web 2.0, communication tools, Web 3.0 e mobile apps expandem o ambiente de e-learning.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="standards" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>2. Desenvolvimento histórico das plataformas digitais</h2>
+
+          <p>
+            A apresentação mostra o desenvolvimento das plataformas de e-learning através de três etapas:
+            domínio da web, surgimento de standards/open-source e fase atual de recursos,
+            integração, cloud, mobile devices, analytics, personalization e AI.
+          </p>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <span>Web</span>
+              <p>
+                Os cursos passaram a estar disponíveis através do browser, substituindo gradualmente o CD-ROM.
+                Isto ampliou o público e levou à primeira geração de LMS comerciais baseadas na web,
+                que geriam users, content, assessment e communication.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span>2000–2002</span>
+              <p>
+                Surge a primeira versão do SCORM em 2000. Em 2002 surge o Moodle
+                como primeira LMS open-source, reforçando o papel dos standards e do open-source no e-learning.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span>Etapa atual</span>
+              <p>
+                Cloud e mobile devices alteram as necessidades dos utilizadores. Surgem advanced analytics,
+                xAPI, personalization e AI como novas áreas de desenvolvimento da aprendizagem digital.
+              </p>
+            </div>
+          </div>
+
+          <div class="callout">
+            <strong>Lógica de desenvolvimento:</strong> primeiro era importante simplesmente lançar o curso no browser.
+            Depois passou a ser importante transferir o curso entre plataformas. Hoje é importante acompanhar a learning experience
+            em diferentes ambientes e personalizar a aprendizagem.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="scorm" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>3. SCORM — Shareable Content Object Reference Model</h2>
+
+          <p>
+            SCORM é um conjunto de especificações técnicas criado para garantir
+            <strong>interoperability</strong> entre conteúdos de e-learning e diferentes plataformas.
+            Permite que materiais educativos sejam reutilizados e lançados
+            em várias LMS sem adaptações específicas.
+          </p>
+
+          <div class="callout">
+            <strong>Definição curta:</strong> SCORM é um standard de empacotamento, lançamento,
+            comunicação e tracking de conteúdos de e-learning dentro de uma LMS.
+          </div>
+
+          <h3>Porque o SCORM é importante</h3>
+          <ul>
+            <li>Antes do SCORM, o conteúdo criado para uma plataforma frequentemente funcionava mal noutra.</li>
+            <li>A ausência de um standard comum aumentava a dependência de fornecedores específicos de software.</li>
+            <li>Recriar o mesmo curso para diferentes sistemas aumentava os development costs.</li>
+            <li>SCORM criou uma forma comum de packaging, communication e tracking.</li>
+            <li>As organizações passaram a recolher dados mais estáveis sobre progress, completion e performance.</li>
+            <li>SCORM tornou-se o standard dominante de distribuição de digital learning content durante mais de uma década.</li>
+          </ul>
+
+          <h3>Como funciona o SCORM</h3>
+          <div class="topic-grid">
+            <div class="topic-card">
+              <h3>ZIP package</h3>
+              <p>O curso é distribuído como pacote ZIP com todos os ficheiros e metadata.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>imsmanifest.xml</h3>
+              <p>Índice principal do curso: structure, resources e navigation rules.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>JavaScript API</h3>
+              <p>O conteúdo comunica com a LMS através de uma JavaScript API standardizada.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Tracking</h3>
+              <p>Normalmente são registados completion status, score, time e learner location.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Authoring tool</h3>
+              <p>O conteúdo é criado numa authoring tool e depois exportado em SCORM.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>LMS execution</h3>
+              <p>Uma LMS compatível lança o pacote e recebe dados sobre a realização.</p>
+            </div>
+          </div>
+
+          <h3>Evolução e legado do SCORM</h3>
+          <ul>
+            <li>SCORM 1.2 tornou-se a versão mais amplamente adotada devido a simplicity, stability e compatibility.</li>
+            <li>O principal legado do SCORM é um interoperable ecosystem para distribuição de educational content.</li>
+            <li>A standardização do tracking permitiu acompanhar completion, progress e performance de forma comparável.</li>
+            <li>As limitações do SCORM em mobile learning, offline learning e data model levaram ao desenvolvimento de xAPI e cmi5.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="xapi" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>4. xAPI — Experience API</h2>
+
+          <p>
+            xAPI, inicialmente conhecido como Project Tin Can, foi criado para recolher e armazenar
+            dados sobre learning experiences em diferentes contextos. Foi publicado em 2013 como resposta
+            às novas necessidades do digital learning.
+          </p>
+
+          <div class="callout">
+            <strong>Definição curta:</strong> xAPI regista experiências educativas não apenas em LMS,
+            mas também em mobile apps, simulations, games, ambientes presenciais e outros contextos.
+          </div>
+
+          <h3>Porque o xAPI se tornou necessário</h3>
+          <ul>
+            <li>O crescimento de mobile apps, serious games, simulations e VR exigiu tracking mais flexível.</li>
+            <li>Tornou-se necessário acompanhar experiências de aprendizagem em diferentes devices e contexts, não apenas no browser e na LMS.</li>
+            <li>As organizações passaram a querer richer indicators: engagement, performance, collaboration, informal learning.</li>
+            <li>xAPI pode registar online e offline activities.</li>
+            <li>xAPI ajuda a construir lifelong learning records.</li>
+            <li>Supera LMS-centered tracking limitations dos modelos tradicionais.</li>
+          </ul>
+
+          <h3>Como funciona o xAPI</h3>
+          <div class="topic-grid">
+            <div class="topic-card">
+              <h3>Actor</h3>
+              <p>Quem realizou a ação: estudante, colaborador, utilizador.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Verb</h3>
+              <p>O que fez: completed, answered, watched, attempted, passed, shared.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Object</h3>
+              <p>Sobre o que foi a ação: lesson, video, quiz, simulation, activity.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Context</h3>
+              <p>Informação adicional: duration, date, result, source validation, environment.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>LRS</h3>
+              <p>Learning Record Store recolhe, armazena e disponibiliza learning records.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Analytics</h3>
+              <p>Os dados são usados para reports, personalization, learning analytics e predictive analysis.</p>
+            </div>
+          </div>
+
+          <h3>Vantagens do xAPI</h3>
+          <ul>
+            <li>Flexibilidade: permite acompanhar quase qualquer learning experience.</li>
+            <li>Suporte a online e offline learning com sincronização posterior.</li>
+            <li>Integração de LMS, mobile apps, enterprise systems e analytics tools.</li>
+            <li>Desenvolvimento de Learning Record Stores, reporting tools e specialized profiles.</li>
+            <li>Suporte a personalization e data-based learning.</li>
+          </ul>
+
+          <div class="callout">
+            <strong>Exemplo de xAPI statement:</strong> “Student completed Quiz 1” ou
+            “Student watched Introduction Video”. Qualquer evento xAPI é construído segundo o esquema:
+            actor + verb + object.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="cmi5" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>5. cmi5 — perfil xAPI para LMS</h2>
+
+          <p>
+            cmi5 é um perfil xAPI criado especificamente para ambientes LMS. Define
+            regras standardizadas para launch, authentication e monitoring of educational content.
+          </p>
+
+          <div class="callout">
+            <strong>Definição curta:</strong> cmi5 liga a flexibilidade do xAPI à lógica tradicional
+            de lançamento e tracking de cursos em LMS.
+          </div>
+
+          <h3>Para que serve o cmi5</h3>
+          <ul>
+            <li>xAPI é muito flexível, mas sem regras adicionais pode ser demasiado livre para LMS.</li>
+            <li>cmi5 define regras consistentes para lançamento e monitoring de conteúdo em LMS.</li>
+            <li>Não substitui xAPI; especifica a sua aplicação a LMS-distributed courses.</li>
+            <li>O seu desenvolvimento está ligado às limitações do SCORM em mobility, authentication e restrictive data models.</li>
+          </ul>
+
+          <h3>Como funciona o cmi5</h3>
+          <div class="topic-grid">
+            <div class="topic-card">
+              <h3>cmi5.xml</h3>
+              <p>Descreve course structure, available modules e launch rules.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Assignable Units</h3>
+              <p>AUs — unidades de aprendizagem que comunicam com a LMS através de xAPI.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>LMS launch</h3>
+              <p>A LMS transmite identity, LRS link e secure authentication parameters.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Lifecycle statements</h3>
+              <p>As AUs enviam dados: started, completed, passed, failed, terminated.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>LRS records</h3>
+              <p>Os registos são armazenados no LRS e usados para progress e results.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>LMS decision</h3>
+              <p>A LMS lê dados do LRS para determinar course completion e learner status.</p>
+            </div>
+          </div>
+
+          <h3>Vantagens do cmi5</h3>
+          <ul>
+            <li>Estrutura mais rigorosa do que xAPI puro.</li>
+            <li>Mais flexível do que SCORM, porque é baseado em xAPI.</li>
+            <li>Adequado para distributed content, simulations e adaptive modules.</li>
+            <li>Considera melhor authentication, launch e LMS reporting.</li>
+            <li>É estrategicamente importante como ponte entre o modelo clássico de LMS e o moderno learning analytics.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="lti" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>6. LTI — Learning Tools Interoperability</h2>
+
+          <p>
+            LTI é um standard 1EdTech para integração de applications e services externos
+            com learning platforms, por exemplo LMS. Ao contrário de SCORM e xAPI,
+            LTI não se foca em conteúdo ou records of learning, mas na ligação
+            entre sistemas independentes.
+          </p>
+
+          <div class="callout">
+            <strong>Definição curta:</strong> LTI permite lançar ferramentas educativas externas
+            diretamente a partir da LMS através de integração segura e Single Sign-On.
+          </div>
+
+          <h3>Como funciona o LTI</h3>
+          <ul>
+            <li>LTI liga Tool Consumer e Tool Provider.</li>
+            <li>Tool Consumer — plataforma recetora, por exemplo LMS.</li>
+            <li>Tool Provider — ferramenta externa: simulator, videoconference system, assessment platform, virtual lab.</li>
+            <li>O utilizador clica numa ligação na LMS para aceder à ferramenta externa.</li>
+            <li>A LMS envia secure request com credentials e contextual data.</li>
+            <li>Podem ser transmitidos name, email, user role, course context e grade information.</li>
+            <li>As versões novas suportam Deep Linking, grade synchronization e automatic participant management.</li>
+          </ul>
+
+          <h3>Porque o LTI é importante</h3>
+          <ul>
+            <li>Complementa SCORM, xAPI e cmi5.</li>
+            <li>SCORM distribui content, xAPI records experiences, enquanto LTI liga systems and tools.</li>
+            <li>Permite construir modular educational ecosystems.</li>
+            <li>Reduz development costs e diminui a dependência de proprietary integrations.</li>
+            <li>Aumenta technological flexibility e apoia innovation.</li>
+            <li>É um dos principais mecanismos de interoperability entre LMS e specialized services.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>7. Comparação entre SCORM, xAPI, cmi5 e LTI</h2>
+
+          <div class="responsive-table">
+            <table class="study-table">
+              <thead>
+                <tr>
+                  <th>Standard</th>
+                  <th>Foco principal</th>
+                  <th>Onde funciona</th>
+                  <th>O que regista / faz</th>
+                  <th>Principal limitação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>SCORM</strong></td>
+                  <td>Empacotamento e lançamento de conteúdo.</td>
+                  <td>Dentro de LMS.</td>
+                  <td>Completion, score, time, location.</td>
+                  <td>Limitado a LMS, browser, cenários online e data model rígido.</td>
+                </tr>
+                <tr>
+                  <td><strong>xAPI</strong></td>
+                  <td>Registo de learning experiences.</td>
+                  <td>LMS, apps, games, simulations, offline/online contexts.</td>
+                  <td>Actor-Verb-Object statements + context/result.</td>
+                  <td>Exige LRS e uma arquitetura de dados mais complexa.</td>
+                </tr>
+                <tr>
+                  <td><strong>cmi5</strong></td>
+                  <td>xAPI em contexto LMS.</td>
+                  <td>LMS + LRS.</td>
+                  <td>Launch, authentication, AU lifecycle, completion.</td>
+                  <td>Menos difundido e exige infraestrutura compatível.</td>
+                </tr>
+                <tr>
+                  <td><strong>LTI</strong></td>
+                  <td>Integração de external tools.</td>
+                  <td>LMS + external applications.</td>
+                  <td>Secure launch, SSO, contextual data, grade sync.</td>
+                  <td>Não é standard de empacotamento de conteúdo nem learning record completo.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout">
+            <strong>Em resumo:</strong> SCORM — curso como pacote. xAPI — experiência como dados.
+            cmi5 — xAPI para LMS. LTI — ferramentas externas dentro de LMS.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="interactivity" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>8. Princípios de interatividade</h2>
+
+          <p>
+            A interatividade no e-learning deve ser pedagogicamente significativa. A ação do utilizador
+            deve ajudar understanding, application ou consolidation of knowledge.
+          </p>
+
+          <div class="topic-grid">
+            <div class="topic-card">
+              <h3>Alignment</h3>
+              <p>Cada ação do utilizador deve estar ligada aos learning objectives.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Autonomy</h3>
+              <p>O estudante recebe control, choice e oportunidades de exploration.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Decision-making</h3>
+              <p>Uma boa interatividade obriga a escolher, experimentar, comparar e aplicar.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Immediate feedback</h3>
+              <p>O estudante deve compreender rapidamente as consequências das suas ações e corrigir erros.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Meaningful feedback</h3>
+              <p>O feedback deve explicar porque a resposta está correta ou incorreta.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Appropriate challenge</h3>
+              <p>A dificuldade deve corresponder ao nível de competência dos estudantes.</p>
+            </div>
+          </div>
+
+          <h3>Ambiente interativo eficaz</h3>
+          <p>
+            Os digital interactive environments mais eficazes combinam active participation,
+            meaningful feedback, intuitive navigation e challenges adequados ao nível dos estudantes.
+          </p>
+
+          <div class="callout">
+            <strong>Pergunta de verificação:</strong> esta ação ajuda o estudante a compreender, aplicar
+            ou consolidar conhecimento? Se não, não é interatividade educativa, mas um clique decorativo.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>9. Atividade “Operação Engagement”</h2>
+
+          <p>
+            O ficheiro inclui uma atividade prática de 60 minutos: os estudantes, em grupos de 2–3 pessoas,
+            recebem um documento sobre ergonomia e devem transformá-lo num recurso multimédia
+            mais attractive e interactive para o target audience.
+          </p>
+
+          <h3>O que deve ser apresentado</h3>
+          <ul>
+            <li>A concept idea desenvolvida.</li>
+            <li>As principais proposed interactions.</li>
+            <li>A aplicação de principles of interactivity.</li>
+            <li>Um exemplo de active participation.</li>
+          </ul>
+
+          <div class="callout">
+            <strong>Importante:</strong> não é necessário desenvolver tecnicamente o recurso.
+            O objetivo da atividade é projetar a learning experience, e não o produto final.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tools" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>10. Plataformas Web 2.0</h2>
+
+          <p>
+            As plataformas Web 2.0 apoiam collaborative learning, shared production,
+            discussion e active participation. São especialmente úteis quando o estudante deve
+            não apenas consumir material, mas criar, comentar, comparar e colaborar.
+          </p>
+
+          <div class="responsive-table">
+            <table class="study-table">
+              <thead>
+                <tr>
+                  <th>Plataforma</th>
+                  <th>Para que é adequada</th>
+                  <th>Benefício educativo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Wiki</strong></td>
+                  <td>Criação e edição colaborativa de uma knowledge base.</td>
+                  <td>Collective construction of knowledge, documentation, glossary.</td>
+                </tr>
+                <tr>
+                  <td><strong>Padlet</strong></td>
+                  <td>Quadro visual com notas, links, imagens e ideias.</td>
+                  <td>Brainstorming, sharing resources, recolha rápida de ideias.</td>
+                </tr>
+                <tr>
+                  <td><strong>Miro</strong></td>
+                  <td>Collaborative whiteboard para esquemas, maps, workflows e design thinking.</td>
+                  <td>Group planning, concept maps, storyboard, process visualization.</td>
+                </tr>
+                <tr>
+                  <td><strong>Flipgrid</strong></td>
+                  <td>Respostas em vídeo e curtas student presentations.</td>
+                  <td>Oral expression, reflection, peer feedback, social presence.</td>
+                </tr>
+                <tr>
+                  <td><strong>Notion</strong></td>
+                  <td>Notes, databases, project documentation e shared workspace.</td>
+                  <td>Organization, collaborative documentation, project management.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Risco da Web 2.0</h3>
+          <p>
+            Se não forem definidas regras, papéis e objetivo da atividade, a Web 2.0 transforma-se numa troca caótica de links.
+            A plataforma deve apoiar uma learning activity concreta.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>11. Ferramentas de Comunicação</h2>
+
+          <p>
+            Communication tools apoiam comunicação síncrona e assíncrona,
+            group coordination, feedback e acompanhamento em online learning.
+          </p>
+
+          <div class="topic-grid">
+            <div class="topic-card">
+              <h3>Discord</h3>
+              <p>Canais, voice rooms, community interaction, discussões rápidas e apoio informal.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Microsoft Teams</h3>
+              <p>Videoconferências, ficheiros, turmas, assignments, integração com Microsoft 365.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Slack</h3>
+              <p>Canais de equipa, threads, integrations, project communication e professional workflow.</p>
+            </div>
+          </div>
+
+          <h3>Como utilizar sem caos</h3>
+          <ul>
+            <li>Definir onde se colocam perguntas sobre conteúdo e onde se discute o projeto.</li>
+            <li>Separar canais por temas.</li>
+            <li>Fixar instruções e prazos.</li>
+            <li>Não duplicar a mesma informação em vários canais.</li>
+            <li>Utilizar notifications conscientemente para não criar overload.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>12. Web 3.0 no e-learning</h2>
+
+          <p>
+            Web 3.0 no contexto da disciplina está sobretudo ligada a intelligent systems:
+            educational chatbots, virtual tutors e predictive analytics.
+            Estas ferramentas permitem reforçar personalization, acompanhamento e data-based decision-making.
+          </p>
+
+          <div class="topic-grid">
+            <div class="topic-card">
+              <h3>Educational chatbots</h3>
+              <p>Respondem a perguntas frequentes, ajudam a orientar-se no módulo e dão apoio básico.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Virtual tutors</h3>
+              <p>Podem acompanhar o estudante, sugerir pistas e adaptar explicações.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Predictive analytics</h3>
+              <p>Usa dados para identificar risco de dropout, pontos fracos e necessidade de intervention.</p>
+            </div>
+          </div>
+
+          <h3>Riscos da Web 3.0</h3>
+          <ul>
+            <li>A AI pode dar respostas imprecisas ou inadequadas.</li>
+            <li>São necessários privacy, data protection e transparência no uso dos dados.</li>
+            <li>O estudante não deve substituir totalmente o pensamento crítico por uma sugestão automática.</li>
+            <li>Predictive analytics pode ser biased se os dados forem incompletos ou mal interpretados.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>13. Mobile Apps</h2>
+
+          <p>
+            Mobile apps apoiam learning on the move, microlearning, repetition,
+            gamification e verificações interativas rápidas. Mas o formato móvel exige
+            blocos curtos, clear UI e responsive design.
+          </p>
+
+          <div class="responsive-table">
+            <table class="study-table">
+              <thead>
+                <tr>
+                  <th>Aplicação</th>
+                  <th>Função na aprendizagem</th>
+                  <th>O que se pode retirar para o próprio projeto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Kahoot!</strong></td>
+                  <td>Quizzes de jogo e verificação rápida da compreensão.</td>
+                  <td>Perguntas curtas, competição, immediate feedback.</td>
+                </tr>
+                <tr>
+                  <td><strong>Duolingo</strong></td>
+                  <td>Microlearning, streaks, gamification, tarefas curtas.</td>
+                  <td>Progress, pequenas aulas, repetição, motivação visível.</td>
+                </tr>
+                <tr>
+                  <td><strong>Codecademy Go</strong></td>
+                  <td>Prática de programação e repetição do material no telemóvel.</td>
+                  <td>Mini-exercícios, consolidação, learning by doing.</td>
+                </tr>
+                <tr>
+                  <td><strong>Elevate</strong></td>
+                  <td>Treino de cognitive skills através de exercícios curtos.</td>
+                  <td>Atividades curtas baseadas em challenge e progresso personalizado.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout">
+            <strong>Para e-learning:</strong> mobile não significa “o mesmo site, só mais pequeno”.
+            São necessários blocos curtos, touch targets grandes, navegação simples e ação rápida.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>14. Erros frequentes</h2>
+
+          <div class="compact-list">
+            <p><strong>Erro 1:</strong> confundir standards: SCORM não é o mesmo que xAPI, cmi5 ou LTI.</p>
+            <p><strong>Erro 2:</strong> considerar SCORM ultrapassado e inútil. Continua a ser amplamente utilizado.</p>
+            <p><strong>Erro 3:</strong> pensar que xAPI funciona apenas em LMS. Pelo contrário, serve para diferentes contextos.</p>
+            <p><strong>Erro 4:</strong> esquecer que xAPI exige LRS.</p>
+            <p><strong>Erro 5:</strong> interpretar cmi5 como substituto de xAPI. É um perfil xAPI para LMS.</p>
+            <p><strong>Erro 6:</strong> considerar LTI um standard de empacotamento de conteúdo. LTI é integration entre systems/tools.</p>
+            <p><strong>Erro 7:</strong> adicionar interatividade por cliques, e não por learning objectives.</p>
+            <p><strong>Erro 8:</strong> utilizar muitas communication tools sem regras.</p>
+            <p><strong>Erro 9:</strong> transferir conteúdo desktop longo para mobile sem adaptação.</p>
+            <p><strong>Erro 10:</strong> não explicar na defesa porque a tecnologia escolhida é adequada ao módulo.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="exam" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>15. O que é importante memorizar para o exame</h2>
+
+          <h3>Mini-apontamentos</h3>
+          <div class="compact-list">
+            <p><strong>eLearning standards:</strong> são necessários para interoperability, tracking, reuse e integration.</p>
+            <p><strong>SCORM:</strong> ZIP package + imsmanifest.xml + JavaScript API + LMS tracking.</p>
+            <p><strong>SCORM records:</strong> completion, score, time, learner location.</p>
+            <p><strong>SCORM legacy:</strong> interoperable ecosystem e LMS-tracking estável.</p>
+            <p><strong>xAPI:</strong> records learning experiences através de Actor-Verb-Object statements.</p>
+            <p><strong>LRS:</strong> Learning Record Store armazena xAPI statements.</p>
+            <p><strong>cmi5:</strong> xAPI profile para LMS launch, authentication e monitoring.</p>
+            <p><strong>LTI:</strong> secure integration external tools with LMS, incluindo SSO e context data.</p>
+            <p><strong>Interactivity:</strong> alignment with objectives, autonomy, exploration, decision-making, immediate feedback.</p>
+            <p><strong>Web 2.0:</strong> Wiki, Padlet, Miro, Flipgrid, Notion.</p>
+            <p><strong>Communication tools:</strong> Discord, Microsoft Teams, Slack.</p>
+            <p><strong>Web 3.0:</strong> chatbots, virtual tutors, predictive analytics.</p>
+            <p><strong>Mobile apps:</strong> Kahoot!, Duolingo, Codecademy Go, Elevate.</p>
+          </div>
+
+          <h3>Perguntas de autoavaliação</h3>
+          <div class="compact-list">
+            <p><strong>1. Para que serve o SCORM?</strong><br>
+              Para empacotar, lançar, reutilizar e acompanhar conteúdos de e-learning em LMS.</p>
+
+            <p><strong>2. O que existe dentro de um pacote SCORM?</strong><br>
+              ZIP com ficheiros do curso, metadata e imsmanifest.xml, que descreve a estrutura e a navegação.</p>
+
+            <p><strong>3. Em que é que xAPI difere de SCORM?</strong><br>
+              SCORM funciona sobretudo dentro de LMS; xAPI pode registar learning experiences em diferentes ambientes.</p>
+
+            <p><strong>4. O que é Actor-Verb-Object?</strong><br>
+              Estrutura de um xAPI statement: quem fez, o que fez e sobre que objeto.</p>
+
+            <p><strong>5. O que é LRS?</strong><br>
+              Learning Record Store — sistema de armazenamento e disponibilização de learning records.</p>
+
+            <p><strong>6. O que é cmi5?</strong><br>
+              Perfil xAPI para LMS, que define regras de lançamento, autorização e monitoring.</p>
+
+            <p><strong>7. O que é uma Assignable Unit?</strong><br>
+              Unidade de aprendizagem em cmi5 que é lançada a partir da LMS e transmite xAPI statements.</p>
+
+            <p><strong>8. Para que serve LTI?</strong><br>
+              Para ligar external tools a LMS de forma segura, incluindo SSO e transmissão de contexto.</p>
+
+            <p><strong>9. O que distingue uma boa interatividade?</strong><br>
+              Está ligada a objectives, oferece autonomy, decision-making e meaningful immediate feedback.</p>
+
+            <p><strong>10. O que é Operação Engagement?</strong><br>
+              Atividade em que um grupo transforma um documento num multimedia learning resource mais atrativo e interativo.</p>
+
+            <p><strong>11. Como Web 3.0 é aplicada no e-learning?</strong><br>
+              Através de chatbots, virtual tutors e predictive analytics.</p>
+
+            <p><strong>12. Conclusão principal do TP10?</strong><br>
+              As tecnologias de e-learning devem garantir compatibilidade, tracking, integration, interactivity e pedagogical value.</p>
+          </div>
+
+          <div class="callout">
+            <strong>Conclusão final:</strong> TP10 mostra a arquitetura técnica do e-learning moderno:
+            SCORM responde pelo pacote e LMS-tracking, xAPI pelo learning record amplo, cmi5 pelo xAPI dentro de LMS,
+            LTI pela ligação de ferramentas externas, enquanto a interatividade e Web tools transformam o conteúdo
+            numa experiência de aprendizagem ativa.
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 PDF Notes · TMEL TP10</p>
+      <a href="index.html">Voltar à página inicial</a>
+    </div>
+  </footer>
+</body>
+</html>

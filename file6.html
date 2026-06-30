@@ -1,0 +1,581 @@
+<!-- file6.html -->
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TMEL TP06 — ADDIE e SAM</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">PDF Notes</a>
+
+      <nav class="main-nav" aria-label="Navegação da página">
+        <a href="#design">Design</a>
+        <a href="#merrill">Merrill</a>
+        <a href="#addie">ADDIE</a>
+        <a href="#sam">SAM</a>
+        <a href="#comparison">Comparação</a>
+        <a href="#exam">Exame</a>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-label="Alternar tema">
+        <span class="theme-toggle__icon">☾</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section note-hero reveal">
+      <div class="container note-layout">
+        <p class="eyebrow">TMEL · TP06 · Aula n.º 6 · 16.05.2026</p>
+        <h1>Princípios de instructional design: ADDIE + SAM</h1>
+        <p class="hero-text">
+          Apontamentos detalhados sobre instructional design, os cinco princípios de Merrill,
+          o modelo ADDIE, o modelo SAM, as suas diferenças, riscos, aplicação em e-learning
+          e perguntas de autoavaliação.
+        </p>
+
+        <div class="note-meta-grid">
+          <div class="note-meta-card">
+            <span>Disciplina</span>
+            <strong>Tecnologias Multimédia para E-Learning</strong>
+          </div>
+          <div class="note-meta-card">
+            <span>Bloco</span>
+            <strong>O Estudante e o E-Learning</strong>
+          </div>
+          <div class="note-meta-card">
+            <span>Tema</span>
+            <strong>Princípios do Design Instrucional: ADDIE + SAM</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>1. O que se estuda neste ficheiro</h2>
+
+          <p>
+            Este ficheiro é dedicado à forma correta de conceber um módulo de e-learning.
+            O foco principal não está no aspeto visual, mas na arquitetura pedagógica:
+            objetivos, conteúdos, atividades, materiais, avaliação, feedback e testes devem
+            funcionar como um sistema único.
+          </p>
+
+          <div class="callout">
+            <strong>Ideia principal:</strong> o instructional design é necessário para que um curso online seja
+            não um conjunto de páginas, vídeos e testes, mas um percurso de aprendizagem pensado, em que cada
+            parte ajuda o estudante a atingir um objetivo de aprendizagem concreto.
+          </div>
+
+          <div class="topic-grid">
+            <div class="topic-card">
+              <h3>Instructional design</h3>
+              <p>Processo sistemático de planeamento, desenvolvimento, implementação e avaliação da aprendizagem.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Merrill</h3>
+              <p>5 princípios: problema, ativação, demonstração, aplicação, integração.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>ADDIE</h3>
+              <p>Modelo linear: Analysis, Design, Development, Implementation, Evaluation.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>SAM</h3>
+              <p>Modelo agile: protótipos rápidos, iterações, testes e feedback constante.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Comparação</h3>
+              <p>ADDIE é melhor para projetos estáveis; SAM, para incerteza e mudanças rápidas.</p>
+            </div>
+
+            <div class="topic-card">
+              <h3>Prática</h3>
+              <p>Aplicação dos modelos em projetos educativos.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="design" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>2. Design Instrucional — o que é</h2>
+
+          <p>
+            Instructional design é o processo sistemático de traduzir princípios de aprendizagem
+            no planeamento de atividades educativas. Inclui a definição da avaliação
+            e tem em conta o contexto do curso.
+          </p>
+
+          <div class="callout">
+            <strong>Definição curta:</strong> instructional design é a conceção intencional e sistemática
+            da aprendizagem: desde a identificação da necessidade educativa até ao desenvolvimento de materiais,
+            atividades, interatividade e avaliação dos resultados.
+          </div>
+
+          <h3>O que inclui o instructional design</h3>
+          <ul>
+            <li>Definição da necessidade ou problema de aprendizagem.</li>
+            <li>Análise do contexto do curso e do público-alvo.</li>
+            <li>Planeamento de métodos, técnicas, atividades e materiais.</li>
+            <li>Desenvolvimento de produtos educativos e collaborative environments.</li>
+            <li>Criação de interactive activities.</li>
+            <li>Conceção de modelos de assessment.</li>
+            <li>Verificação de se o curso contribui para o desenvolvimento de competências.</li>
+          </ul>
+
+          <h3>Para que serve</h3>
+          <p>
+            O objetivo do instructional design é escolher os melhores métodos para facilitar a aprendizagem
+            e o desenvolvimento de competências. No e-learning isto é especialmente importante, porque o estudante
+            muitas vezes percorre o módulo de forma autónoma, sem explicação oral constante do docente.
+          </p>
+
+          <div class="compact-list">
+            <p><strong>Sem instructional design:</strong> o curso pode tornar-se um conjunto de materiais desconexos.</p>
+            <p><strong>Com instructional design:</strong> o curso tem objetivos, estrutura, lógica, atividades, feedback e avaliação.</p>
+            <p><strong>Critério principal:</strong> cada parte do módulo deve responder à pergunta “para que serve isto na aprendizagem?”</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="merrill" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>3. Princípios de instructional design e Merrill</h2>
+
+          <p>
+            A internet e as novas tecnologias de informação e comunicação revitalizaram
+            a educação à distância: deram aos instructional designers novos métodos,
+            recursos, plataformas, interatividade e canais de feedback.
+          </p>
+
+          <p>
+            O termo instructional design começou a ser usado ativamente durante a Segunda Guerra Mundial,
+            quando psicólogos desenvolveram materiais de formação para o exército dos EUA.
+          </p>
+
+          <h3>5 princípios de Merrill</h3>
+          <div class="topic-grid">
+            <div class="topic-card">
+              <h3>1. Problema</h3>
+              <p>
+                A aprendizagem deve estar centrada na resolução de problemas reais, e não apenas
+                na transmissão de teoria.
+              </p>
+            </div>
+
+            <div class="topic-card">
+              <h3>2. Ativação</h3>
+              <p>
+                Antes de apresentar novo material, é necessário ativar os conhecimentos prévios e a experiência do estudante.
+              </p>
+            </div>
+
+            <div class="topic-card">
+              <h3>3. Demonstração</h3>
+              <p>
+                Os novos conhecimentos devem ser mostrados através de exemplo, modelo, cenário, vídeo ou análise de caso.
+              </p>
+            </div>
+
+            <div class="topic-card">
+              <h3>4. Aplicação</h3>
+              <p>
+                O estudante deve aplicar ele próprio o novo conhecimento: resolver uma tarefa, fazer um quiz,
+                realizar uma ação.
+              </p>
+            </div>
+
+            <div class="topic-card">
+              <h3>5. Integração</h3>
+              <p>
+                O novo conhecimento deve ser integrado na experiência do estudante: através de reflexão,
+                discussão ou transferência prática.
+              </p>
+            </div>
+          </div>
+
+          <div class="callout">
+            <strong>Fórmula de Merrill:</strong> problema real → ativação de conhecimentos prévios →
+            demonstração → aplicação → integração na experiência do estudante.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="addie" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>4. Modelo ADDIE</h2>
+
+          <p>
+            ADDIE é um modelo clássico de instructional design. É amplamente utilizado
+            no desenvolvimento de programas educativos e de training. Na apresentação indica-se que
+            o modelo surgiu em 1975 na Universidade da Florida.
+          </p>
+
+          <div class="callout">
+            <strong>Essência do ADDIE:</strong> cada etapa gera um resultado que inicia a seguinte.
+            Por isso, o modelo exige uma sequência linear e precisa de passos.
+          </div>
+
+          <h3>Características-chave do ADDIE</h3>
+          <ul>
+            <li>Guide eficaz para compreender as fases de design do curso.</li>
+            <li>Amplamente utilizado no desenvolvimento de programas de educação e training.</li>
+            <li>Adequado para conceber e avaliar learning experiences, courses e educational content.</li>
+            <li>Bem estruturado e aplicável tanto em digital como em traditional educational environments.</li>
+            <li>Exige planeamento claro antes do desenvolvimento.</li>
+          </ul>
+
+          <h3>5 etapas do ADDIE</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span>A — Analysis</span>
+              <p>
+                Análise: compreender o educational problem, o público-alvo, o context, needs,
+                limitações e criar a base da solução.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span>D — Design</span>
+              <p>
+                Design: planear a solução educativa, objectives, estrutura,
+                métodos, storyboard, activities e assessment.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span>D — Development</span>
+              <p>
+                Desenvolvimento: produzir materiais e recursos — texto, vídeo, áudio,
+                imagens, quizzes, interactive elements.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span>I — Implementation</span>
+              <p>
+                Implementação: colocar a situação de aprendizagem em prática — lançar o módulo
+                no site, LMS ou outra plataforma.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span>E — Evaluation</span>
+              <p>
+                Avaliação: verificar os resultados do trabalho durante e depois da implementação,
+                avaliar learning outcomes, usability e effectiveness.
+              </p>
+            </div>
+          </div>
+
+          <h3>Quando o ADDIE é mais adequado</h3>
+          <div class="compact-list">
+            <p><strong>Requisitos estáveis:</strong> objetivos e formato do curso são claros desde o início.</p>
+            <p><strong>Projeto complexo:</strong> é necessário documentar cuidadosamente as etapas.</p>
+            <p><strong>Curso oficial:</strong> são importantes o controlo, a sequência e a previsibilidade.</p>
+            <p><strong>Trabalho em equipa:</strong> é conveniente distribuir tarefas por fases.</p>
+          </div>
+
+          <h3>Principal risco do ADDIE</h3>
+          <p>
+            Devido à linearidade, os problemas podem surgir demasiado tarde — por exemplo, já depois
+            do desenvolvimento ou da implementação. Por isso, mesmo no ADDIE, não se deve esperar pelo final para
+            verificar pela primeira vez a qualidade do curso.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sam" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>5. Modelo SAM — Successive Approximation Model</h2>
+
+          <p>
+            SAM é uma estrutura agile de instructional design, desenvolvida por Michael Allen.
+            Foca-se em rapid prototyping, iterative development e frequent feedback.
+          </p>
+
+          <div class="callout">
+            <strong>Essência do SAM:</strong> não esperar por um produto final perfeito, mas criar rapidamente
+            um protótipo, testá-lo, obter feedback e melhorar através de iterações sucessivas.
+          </div>
+
+          <h3>Características-chave do SAM</h3>
+          <ul>
+            <li>Método de successive approximations — aproximações sucessivas a uma boa solução.</li>
+            <li>Apoia rapid prototyping.</li>
+            <li>Utiliza testes e constant adjustments.</li>
+            <li>Cria functional prototypes desde o início.</li>
+            <li>Melhora o produto através de revisions constantes.</li>
+            <li>Envolve designers, trainers e end users desde o início do projeto.</li>
+            <li>Tem duas versões: SAM1 e SAM2.</li>
+          </ul>
+
+          <h3>SAM1 e SAM2</h3>
+          <div class="two-column">
+            <div class="info-card">
+              <h3>SAM1</h3>
+              <p>
+                É utilizado em projetos pequenos e rápidos, nos quais é possível criar,
+                testar e melhorar a solução rapidamente.
+              </p>
+            </div>
+
+            <div class="info-card">
+              <h3>SAM2</h3>
+              <p>
+                É utilizado em projetos grandes e complexos, nos quais são necessárias fases
+                de desenvolvimento mais rigorosas e maior controlo.
+              </p>
+            </div>
+          </div>
+
+          <h3>Fases do SAM</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span>Preparation</span>
+              <p>
+                Preparação: análise, objectives, goals e results. É necessário considerar target audience,
+                competences, learning needs, comprehension, learning context e delivery type.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span>Design iterations</span>
+              <p>
+                Iterações de design: sketch → prototype → review. Consideram-se technical analysis,
+                content, design quality, accessibility, internet/technology access, mobility,
+                colors, organization, context e learning opportunities.
+              </p>
+            </div>
+
+            <div class="timeline-item">
+              <span>Implementation</span>
+              <p>
+                Implementação com possibilidade de adjustments: integração de design, development
+                e improvement processes. Os objetivos são alcançados step by step.
+              </p>
+            </div>
+          </div>
+
+          <h3>Quando o SAM é mais adequado</h3>
+          <div class="compact-list">
+            <p><strong>Incerteza:</strong> os requisitos ainda não estão totalmente claros.</p>
+            <p><strong>Curso inovador:</strong> é necessário experimentar com o formato.</p>
+            <p><strong>Feedback do utilizador:</strong> é importante testar rapidamente ideias com utilizadores reais.</p>
+            <p><strong>Criatividade:</strong> o modelo permite alterações e novas soluções durante o processo.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="comparison" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>6. ADDIE e SAM: comparação precisa</h2>
+
+          <div class="responsive-table">
+            <table class="study-table">
+              <thead>
+                <tr>
+                  <th>Característica</th>
+                  <th>ADDIE</th>
+                  <th>SAM</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Tipo de modelo</strong></td>
+                  <td>Linear, tradicional.</td>
+                  <td>Iterativo, agile.</td>
+                </tr>
+                <tr>
+                  <td><strong>Etapas principais</strong></td>
+                  <td>Analysis, Design, Development, Implementation, Evaluation.</td>
+                  <td>Preparation, Iterations, Implementation.</td>
+                </tr>
+                <tr>
+                  <td><strong>Velocidade</strong></td>
+                  <td>Mais lento, mais detalhado, exige mais planeamento prévio.</td>
+                  <td>Mais rápido, com correções constantes.</td>
+                </tr>
+                <tr>
+                  <td><strong>Flexibilidade</strong></td>
+                  <td>Menor: cada fase depende da anterior.</td>
+                  <td>Maior: permite experimentar e adaptar a solução.</td>
+                </tr>
+                <tr>
+                  <td><strong>Foco inicial</strong></td>
+                  <td>Planeamento profundo antes da ação.</td>
+                  <td>Ação rápida através de prototypes e feedback.</td>
+                </tr>
+                <tr>
+                  <td><strong>Ideal para</strong></td>
+                  <td>Projetos complexos com requisitos estáveis.</td>
+                  <td>Projetos agile com incerteza e criatividade.</td>
+                </tr>
+                <tr>
+                  <td><strong>Riscos</strong></td>
+                  <td>Maiores: os problemas podem surgir apenas no final.</td>
+                  <td>Menores: os problemas são identificados cedo e corrigidos durante o processo.</td>
+                </tr>
+                <tr>
+                  <td><strong>Participação dos utilizadores</strong></td>
+                  <td>Mais limitada no início.</td>
+                  <td>Elevada desde o início.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout">
+            <strong>Conclusão prática:</strong> ADDIE oferece estrutura e controlo.
+            SAM oferece velocidade, flexibilidade e testes precoces.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>7. Como aplicar ADDIE e SAM num projeto de e-learning</h2>
+
+          <p>
+            Num projeto real, é possível combinar ambos os modelos: usar a estrutura clara do ADDIE
+            e, do SAM, a prototipagem, os testes e o continuous improvement.
+          </p>
+
+          <h3>Aplicação do ADDIE</h3>
+          <div class="compact-list">
+            <p><strong>Analysis:</strong> definir tema, público, needs, nível de conhecimentos, limitações e plataforma.</p>
+            <p><strong>Design:</strong> formular objectives, estrutura do módulo, storyboard, activities e assessment.</p>
+            <p><strong>Development:</strong> criar video, infographic, audio, quiz, interactive blocks e página do módulo.</p>
+            <p><strong>Implementation:</strong> colocar o módulo no site, LMS ou GitHub Pages.</p>
+            <p><strong>Evaluation:</strong> verificar usability, clarity, quiz results, feedback e learning outcomes.</p>
+          </div>
+
+          <h3>Aplicação do SAM</h3>
+          <div class="compact-list">
+            <p><strong>Prototype:</strong> criar rapidamente um ecrã funcional ou um módulo curto.</p>
+            <p><strong>Review:</strong> mostrar ao utilizador ou ao grupo e recolher feedback.</p>
+            <p><strong>Improve:</strong> corrigir navigation, content, wording, media e interaction.</p>
+            <p><strong>Repeat:</strong> repetir o ciclo até chegar a uma versão estável.</p>
+          </div>
+
+          <div class="callout">
+            <strong>Melhor combinação:</strong> ADDIE responde pelo percurso geral do projeto,
+            SAM pelo melhoramento de ecrãs concretos, media e interactive activities.
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>8. Erros frequentes</h2>
+
+          <div class="compact-list">
+            <p><strong>Erro 1:</strong> começar o desenvolvimento pelo design da página, e não pelos learning objectives.</p>
+            <p><strong>Erro 2:</strong> criar atividades que não verificam os objetivos declarados.</p>
+            <p><strong>Erro 3:</strong> considerar Evaluation apenas uma etapa final, e não uma verificação contínua de qualidade.</p>
+            <p><strong>Erro 4:</strong> usar ADDIE de forma demasiado rígida e descobrir problemas apenas no final.</p>
+            <p><strong>Erro 5:</strong> usar SAM sem estrutura, transformando as iterações em caos.</p>
+            <p><strong>Erro 6:</strong> fazer um prototype sem feedback real.</p>
+            <p><strong>Erro 7:</strong> confundir rapid prototyping com desenvolvimento descuidado.</p>
+            <p><strong>Erro 8:</strong> esquecer que instructional design é pedagogia, e não apenas interface.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="exam" class="section reveal">
+      <div class="container note-layout">
+        <article class="note-content">
+          <h2>9. O que é importante memorizar para o exame</h2>
+
+          <h3>Mini-apontamentos</h3>
+          <div class="compact-list">
+            <p><strong>Instructional design:</strong> conceção sistemática da aprendizagem com base em objetivos, contexto, atividades, materiais e assessment.</p>
+            <p><strong>Objetivo do instructional design:</strong> facilitar learning e development of competences.</p>
+            <p><strong>Merrill:</strong> problem, activation, demonstration, application, integration.</p>
+            <p><strong>ADDIE:</strong> Analysis, Design, Development, Implementation, Evaluation.</p>
+            <p><strong>ADDIE:</strong> linear, estruturado, mais lento, adequado para requisitos estáveis.</p>
+            <p><strong>SAM:</strong> Successive Approximation Model, agile, iterative, rapid prototyping, frequent feedback.</p>
+            <p><strong>SAM1:</strong> projetos pequenos e rápidos.</p>
+            <p><strong>SAM2:</strong> projetos grandes e complexos.</p>
+            <p><strong>Diferença principal:</strong> ADDIE planeia profundamente antes da ação; SAM age rapidamente através de prototypes e feedback.</p>
+          </div>
+
+          <h3>Perguntas de autoavaliação</h3>
+          <div class="compact-list">
+            <p><strong>1. Qual é o principal risco de desenvolver um módulo de e-learning sem alinhar objetivos, atividades e avaliação?</strong><br>
+              O estudante pode realizar tarefas que não conduzem aos learning objectives, e o assessment irá verificar competências erradas.</p>
+
+            <p><strong>2. Porque é que rapid prototyping é importante no SAM?</strong><br>
+              Porque permite identificar problemas cedo, obter feedback e melhorar o produto antes do lançamento final.</p>
+
+            <p><strong>3. No ADDIE, a evaluation deve ocorrer apenas depois da implementation final?</strong><br>
+              Não. Embora Evaluation seja uma fase separada, a verificação da qualidade deve ocorrer ao longo do processo.</p>
+
+            <p><strong>4. O que distingue melhor ADDIE de SAM?</strong><br>
+              ADDIE é um modelo linear e planeado; SAM é um modelo iterativo e flexível.</p>
+
+            <p><strong>5. O que é mais importante definir primeiro num storyboard para e-learning?</strong><br>
+              Learning objectives, porque deles dependem content, media, activities e assessment.</p>
+
+            <p><strong>6. SAM valoriza cycles, experimentation e continuous improvement?</strong><br>
+              Sim. Essa é a lógica central do SAM.</p>
+
+            <p><strong>7. ADDIE costuma ser mais flexível do que SAM?</strong><br>
+              Não. Normalmente SAM é mais flexível, porque permite alterar e testar soluções mais rapidamente.</p>
+
+            <p><strong>8. Que prática corresponde melhor ao instructional design?</strong><br>
+              Começar por needs, objectives e audience, e depois escolher activities, media e assessment.</p>
+
+            <p><strong>9. Se o curso for inovador, os requisitos forem pouco claros e for necessário feedback constante, que modelo é melhor?</strong><br>
+              SAM.</p>
+
+            <p><strong>10. Que fórmula representa melhor Merrill?</strong><br>
+              Problema real → ativação de conhecimentos prévios → demonstração → aplicação → integração.</p>
+          </div>
+
+          <div class="callout">
+            <strong>Conclusão final:</strong> ADDIE é necessário para a estrutura, SAM para a flexibilidade.
+            Num bom projeto de e-learning, objetivos, atividades, multimédia, feedback e assessment
+            devem estar alinhados.
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 PDF Notes · TMEL TP06</p>
+      <a href="index.html">Voltar à página inicial</a>
+    </div>
+  </footer>
+</body>
+</html>
